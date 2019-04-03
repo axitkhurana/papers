@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Akshit Khurana</title>
+    <link>http://blog.axitkhurana.com/post/</link>
+    <description>Recent content in Posts on Akshit Khurana</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Dec 2016 00:52:39 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.axitkhurana.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2016 in pictures</title>
+      <link>http://blog.axitkhurana.com/post/2016-in-pictures/</link>
+      <pubDate>Thu, 29 Dec 2016 00:52:39 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/2016-in-pictures/</guid>
+      <description>Here&amp;rsquo;s what 2015 on Instagram looked like:
+
+365 days, 365 pictures with my phone.
+Just the quest to post one picture a day made me travel, be present and notice things around me. It connected me to people that I hadn&amp;rsquo;t talked to in a while. Whenever I looked back, it reminded me that life isn&amp;rsquo;t as bad as I think. In fact, it&amp;rsquo;s beautiful. Didn&amp;rsquo;t expect any of it.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://blog.axitkhurana.com/post/about/</link>
+      <pubDate>Thu, 29 Dec 2016 00:52:39 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/about/</guid>
+      <description>About page. More things here soon.</description>
+    </item>
+    
+    <item>
+      <title>PyCon &#39;15 sprints: first CPython patch</title>
+      <link>http://blog.axitkhurana.com/post/making-basic-auth-twice-as-fast/</link>
+      <pubDate>Sun, 29 May 2016 03:52:20 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/making-basic-auth-twice-as-fast/</guid>
+      <description>The best part of PyCon is not the conference itself. It&amp;rsquo;s after PyCon.
+Sprints are 4 days of access to the best python minds helping you build software that the world uses. Django, CPython, Mailman, Sage, pandas, buildbot and many more participated last year.
+You don&amp;rsquo;t want to miss sprints. In fact, if you have 3 days only I would suggest you choose sprints over the conference itself. Talks and tutorials are recorded, you can watch them whenever you&amp;rsquo;d like.</description>
+    </item>
+    
+    <item>
+      <title>Introducing Buster</title>
+      <link>http://blog.axitkhurana.com/post/introducing-ghost/</link>
+      <pubDate>Mon, 13 Oct 2014 07:39:20 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/introducing-ghost/</guid>
+      <description>Buster is a Super simple, Totally awesome, Brute force static site generator for Ghost inspired by Octopress.
+Generate Static Pages. Preview. Deploy to Github Pages.
+The interface setup [--gh-repo=&amp;lt;repo-url&amp;gt;]
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Creates a GIT repository inside static/ directory. If you don&amp;rsquo;t specify the repo-url, buster will ask you the clone URL of your new Github Pages repository.
+generate [--domain=&amp;lt;local-address&amp;gt;]
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Generates static pages from locally running Ghost instance.
+preview
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Preview what&amp;rsquo;s generated on localhost:9000.</description>
+    </item>
+    
+    <item>
+      <title>Thomas J. Miller&#39;s 2013 IIT Roorkee convocation address transcript</title>
+      <link>http://blog.axitkhurana.com/post/iitr-convocation-2013/</link>
+      <pubDate>Mon, 13 Oct 2014 07:24:26 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/iitr-convocation-2013/</guid>
+      <description>_Below is the text of the commencement address by Thomas J. Miller, for IITR’s convocation held September 21, 2013._
+Ladies and Gentlemen, distinguished guests. I’m a little nervous. This is quite an honor, so I hope you are kind to me during the next period when I’m speaking to you, sharing some thoughts. My thoughts are actually structured in three parts:
+The first part is an apology. You see, the majority of what I’m going to talk about are the ideas that I have received from a poet, a musician and an artist.</description>
+    </item>
+    
+    <item>
+      <title>The soul of a website</title>
+      <link>http://blog.axitkhurana.com/post/the-soul-of-a-website/</link>
+      <pubDate>Mon, 13 Oct 2014 06:32:24 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/the-soul-of-a-website/</guid>
+      <description>When Shaumik told me about this contest on his new blog directory site, I had to pick my favorite site to write about.
+Considering I spend most of my wakeful state online jumping from site to site, this was not an easy task. With a few new tabs on screen, I watched my fingers dance over the keyboard almost involuntarily, giving me a list of sites I visit often:
+ Twitter Quora Hacker News GMail Github  These are great sites, some give me information, some help me connect, some learn and some are just so beautifully designed.</description>
+    </item>
+    
+    <item>
+      <title>Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure. It is our light, not our darkness,...</title>
+      <link>http://blog.axitkhurana.com/post/our-deepest-fear-is-not-that-we-are-inadequate/</link>
+      <pubDate>Tue, 10 Sep 2013 15:20:04 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/our-deepest-fear-is-not-that-we-are-inadequate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RPM: Packaging python client</title>
+      <link>http://blog.axitkhurana.com/post/rpm-packaging-python-client/</link>
+      <pubDate>Sun, 25 Nov 2012 19:12:52 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/rpm-packaging-python-client/</guid>
+      <description>Package Management Systems take care of everything from installation, upgrading, configuring to removing software packages. They are the original &amp;ldquo;Application Stores&amp;rdquo;. RPM is one such package manager used in various distributions like Fedora, CentOS, openSUSE, Mandriva etc.
+Packages, in addition to the software and data, also have some meta data with them, such as the version number, license and dependencies.
+To create an RPM package, you need the source files and a spec file that has information about your package.</description>
+    </item>
+    
+    <item>
+      <title>UUIDs</title>
+      <link>http://blog.axitkhurana.com/post/uuids/</link>
+      <pubDate>Sat, 30 Jun 2012 15:56:26 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/uuids/</guid>
+      <description>This blog post is a part of “the things I learned while working on popcorn”, Popcorn tracks usage of linux packages. Ionuț Arțăriși is my mentor for this GSoC project for openSUSE.
+Popcorn requires UUIDs (Universally unique IDs) so that it doesn&amp;rsquo;t receive submissions from the same system again before a certain period of time.
+We used to use smolt id, but smolt package is not present in all Linux distributions.</description>
+    </item>
+    
+    <item>
+      <title>Building an API Part #1</title>
+      <link>http://blog.axitkhurana.com/post/building-an-api-part-1/</link>
+      <pubDate>Sun, 17 Jun 2012 14:55:00 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/building-an-api-part-1/</guid>
+      <description>This blog post is a part of &amp;ldquo;the things I learned while working on popcorn&amp;rdquo;, Popcorn tracks usage of linux packages. Ionuț Arțăriși is my mentor for this GSoC project for openSUSE.
+PART #1: Views return JSON in addition to HTML
+JSON?
+JSON = Javascript Object Notation, it&amp;rsquo;s a data interchange format. People used to use XML for data interchange, but JSON is even simpler than XML and it maps more directly onto the data structures used in modern programming languages</description>
+    </item>
+    
+    <item>
+      <title>Python Decorators</title>
+      <link>http://blog.axitkhurana.com/post/python-decorators/</link>
+      <pubDate>Sat, 09 Jun 2012 19:36:00 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/python-decorators/</guid>
+      <description>We know python functions are objects:
+can be assigned to a variable can be defined in another function Hence, a function can return another function.
+Decorators are wrappers, they let you execute code before and after a function without the need to modify the function itself.
+1 def decorator(fn): 2  def wrapper(): 3  print &amp;ldquo;Before fn runs&amp;rdquo; 4  fn() 5  print &amp;ldquo;After fn runs&amp;rdquo; 6  return wrapper  Decorator syntax:</description>
+    </item>
+    
+    <item>
+      <title>Steve Jobs: Secrets of Life (by SCVHA)</title>
+      <link>http://blog.axitkhurana.com/post/steve-jobs-secrets-of-life-by-scvha/</link>
+      <pubDate>Fri, 01 Jun 2012 21:06:03 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/steve-jobs-secrets-of-life-by-scvha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probably the biggest lie told in schools ... is that the way to succeed is through following &#34;the rules.&#34; In fact most such rules are just...</title>
+      <link>http://blog.axitkhurana.com/post/probably-the-biggest-lie-told-in-schools-is-that/</link>
+      <pubDate>Sun, 01 Apr 2012 14:03:40 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/probably-the-biggest-lie-told-in-schools-is-that/</guid>
+      <description>Probably the biggest lie told in schools … is that the way to succeed is through following “the rules.” In fact most such rules are just hacks to manage large groups efficiently.
+Paul Graham</description>
+    </item>
+    
+    <item>
+      <title>SeatGeek application</title>
+      <link>http://blog.axitkhurana.com/post/seatgeek-application/</link>
+      <pubDate>Fri, 02 Mar 2012 02:22:00 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/seatgeek-application/</guid>
+      <description>I was going over the HN March Who&amp;rsquo;s Hiring post, looking for internships, when I clicked on SeatGeek&amp;rsquo;s web engineer post.
+I found this in the left column:
+ For bonus points, you can apply by hacking into our backend jobs admin panel and submitting your resume here: http://apply.seatgeek.com/
+ I checked out the link and the related blog post. This was awesome. The first message:
+ This page must be viewed from the SeatGeek browser</description>
+    </item>
+    
+    <item>
+      <title>When you are inspired by some great purpose, some extraordinary project, all of your thoughts break their bonds: your mind transcends...</title>
+      <link>http://blog.axitkhurana.com/post/when-you-are-inspired-by-some-great-purpose-some/</link>
+      <pubDate>Sun, 12 Feb 2012 14:16:37 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/when-you-are-inspired-by-some-great-purpose-some/</guid>
+      <description>When you are inspired by some great purpose, some extraordinary project, all of your thoughts break their bonds: your mind transcends limitations, your consciousness expands in every direction and you find yourself in a new, great and wonderful world. Dormant forces, faculties and talents become alive and you discover yourself to be a greater person than you ever dreamed yourself to be.
+Robin Sharma, The Monk Who Sold His Ferrari</description>
+    </item>
+    
+    <item>
+      <title>Braces in Python</title>
+      <link>http://blog.axitkhurana.com/post/braces-in-python/</link>
+      <pubDate>Wed, 11 Jan 2012 20:25:01 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/braces-in-python/</guid>
+      <description>One of the hidden features of python I discovered today is that if you don&amp;rsquo;t like whitespace, you can use the C-style {} by issuing:
+&amp;gt; &amp;gt; &amp;gt; from __future__ import braces
+This is what python replies:
+ File &amp;ldquo;&amp;lt;stdin&amp;gt;&amp;rdquo;, line 1SyntaxError: not a chance
+:D</description>
+    </item>
+    
+    <item>
+      <title>One thing that we have learned is that piracy is not a pricing issue. It&#39;s a service issue. The easiest way to stop piracy is not by putting...</title>
+      <link>http://blog.axitkhurana.com/post/one-thing-that-we-have-learned-is-that-piracy-is/</link>
+      <pubDate>Wed, 11 Jan 2012 13:26:42 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/one-thing-that-we-have-learned-is-that-piracy-is/</guid>
+      <description>One thing that we have learned is that piracy is not a pricing issue. It’s a service issue. The easiest way to stop piracy is not by putting antipiracy technology to work. It’s by giving those people a service that’s better than what they’re receiving from the pirates.
+ Gabe Newell, co-founder of videogame company Valve, which publishes Portal and Half-Life via AllThingsD (via marksbirch)</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t Move by Phantogram</title>
+      <link>http://blog.axitkhurana.com/post/dont-move-by-phantogram/</link>
+      <pubDate>Sat, 15 Oct 2011 14:38:00 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/dont-move-by-phantogram/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Remembering Steve Jobs</title>
+      <link>http://blog.axitkhurana.com/post/remembering-steve-jobs-yesterday-the-world/</link>
+      <pubDate>Thu, 06 Oct 2011 18:42:00 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/remembering-steve-jobs-yesterday-the-world/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dutch National Flag Problem</title>
+      <link>http://blog.axitkhurana.com/post/dutch-national-flag-problem/</link>
+      <pubDate>Wed, 05 Oct 2011 18:14:00 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/dutch-national-flag-problem/</guid>
+      <description>Given balls of three colors, say red white and blue randomly arranged, the aim is to arrange all the balls of same color together as in the flag using only the swap operation.
+The algorithm is similar to the partition algorithm used in quicksort. We separate the array into three regions: &amp;lt;low, &amp;gt;=low &amp;amp;&amp;amp; &amp;lt;high, &amp;gt;high.
+void three_partition(int data[], int size, int low, int high) { int x = -1; int y = size; for(int i = 0;i&amp;lt;y;) { if(data[i]&amp;lt;low) { swap(data[i], data[++x]); i++; } else if(data[i]&amp;gt;=high) { swap(data[i], data[&amp;ndash;y]); } else { i++; } } }</description>
+    </item>
+    
+    <item>
+      <title>Commenting block of code in VIM</title>
+      <link>http://blog.axitkhurana.com/post/commenting-block-of-code-in-vim/</link>
+      <pubDate>Tue, 04 Oct 2011 20:12:40 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/commenting-block-of-code-in-vim/</guid>
+      <description>Ctrl + v : Visual block Select first column of the block of code to comment Shift + I : moves cursor to beginning and enters insert mode Type the character which comments the line: # for python or // for c/c++ ESC To uncomment use visual block (Ctrl + v) to select the commenting characters and delete them by typing x.</description>
+    </item>
+    
+    <item>
+      <title>What is the role of a CEO?</title>
+      <link>http://blog.axitkhurana.com/post/what-is-the-role-of-a-ceo/</link>
+      <pubDate>Sun, 02 Oct 2011 18:32:09 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/what-is-the-role-of-a-ceo/</guid>
+      <description>What is the role of a CEO? 13 answers on QuoraWhat is the role of a CEO?</description>
+    </item>
+    
+    <item>
+      <title>Why not to do a music startup?</title>
+      <link>http://blog.axitkhurana.com/post/why-not-to-do-a-music-startup/</link>
+      <pubDate>Mon, 26 Sep 2011 18:53:25 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/why-not-to-do-a-music-startup/</guid>
+      <description>Why not to do a music startup?</description>
+    </item>
+    
+    <item>
+      <title>Ten highly successful bootstrapped startups</title>
+      <link>http://blog.axitkhurana.com/post/ten-highly-successful-bootstrapped-startups/</link>
+      <pubDate>Fri, 02 Sep 2011 15:57:57 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/ten-highly-successful-bootstrapped-startups/</guid>
+      <description>Ten highly successful bootstrapped startups</description>
+    </item>
+    
+    <item>
+      <title>Identity at Mozilla: Introducing BrowserID: A better way to sign in</title>
+      <link>http://blog.axitkhurana.com/post/identity-at-mozilla-introducing-browserid-a/</link>
+      <pubDate>Fri, 15 Jul 2011 06:22:20 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/identity-at-mozilla-introducing-browserid-a/</guid>
+      <description>Identity at Mozilla: Introducing BrowserID: A better way to sign inmozidentity:
+ Today we&amp;rsquo;re excited to announce BrowserID: an experimental new way of signing into websites. Our goal with BrowserID was to design something safe and easy for users and the developers. We&amp;rsquo;d love for you to try it out and let us know what you think.
+
+Why BrowserID?
+For a Web developer,&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>david: Tumblr, 2007</title>
+      <link>http://blog.axitkhurana.com/post/david-tumblr-2007/</link>
+      <pubDate>Thu, 23 Jun 2011 12:15:43 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/david-tumblr-2007/</guid>
+      <description>david:
+ Tumblr, 2007</description>
+    </item>
+    
+    <item>
+      <title>Eric Stromberg: 5 Reasons to Join a Startup After Graduating</title>
+      <link>http://blog.axitkhurana.com/post/eric-stromberg-5-reasons-to-join-a-startup-after/</link>
+      <pubDate>Thu, 02 Jun 2011 17:21:43 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/eric-stromberg-5-reasons-to-join-a-startup-after/</guid>
+      <description>Eric Stromberg: 5 Reasons to Join a Startup After Graduating estromberg:
+ After I wrote my last post, a surprising number of people emailed me asking why I decided to join a startup after graduating from Duke. Many of those I heard from face similar decisions today: either they are college seniors choosing between a big company and a startup, or they are recent&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>pl patterns: Moving from Blogger to Tumblr</title>
+      <link>http://blog.axitkhurana.com/post/pl-patterns-moving-from-blogger-to-tumblr/</link>
+      <pubDate>Wed, 25 May 2011 16:48:17 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/pl-patterns-moving-from-blogger-to-tumblr/</guid>
+      <description>pl patterns: Moving from Blogger to Tumblr Note: if you just want to use the importer, go here.
+I&amp;rsquo;ve been using Tumblr for about 6 months now, and I&amp;rsquo;ve loved it from the start. Up till now, I&amp;rsquo;ve only used it for my tumblelog and a few private groups for projects. But every time I posted on my regular blog, I missed Tumblr. That&amp;rsquo;s&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>pbagwl: Just made a simple description of popular free software licenses</title>
+      <link>http://blog.axitkhurana.com/post/description-of-popular-software-licenses/</link>
+      <pubDate>Sun, 01 May 2011 12:54:40 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/description-of-popular-software-licenses/</guid>
+      <description>pbagwl:
+ Just made a simple description of popular free software licenses</description>
+    </item>
+    
+    <item>
+      <title>Ric Elias: 3 things I learned while my plane crashed</title>
+      <link>http://blog.axitkhurana.com/post/ric-elias-3-things-i-learned-while-my-plane/</link>
+      <pubDate>Mon, 25 Apr 2011 11:19:30 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/ric-elias-3-things-i-learned-while-my-plane/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Radbox Blog: Raising the bar</title>
+      <link>http://blog.axitkhurana.com/post/radbox-blog-raising-the-bar/</link>
+      <pubDate>Sun, 24 Apr 2011 17:49:23 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/radbox-blog-raising-the-bar/</guid>
+      <description>Radbox Blog: Raising the barradbox:
+ I&amp;rsquo;ve come across some awesome iPhone apps recently that really raise the bar and inspire us here at Radbox while we (still) work on the apps. Here is a roundup.
+Tweetbot - Never thought I would pay for a Twitter app, considering that the once-Tweetie-now-official app is pretty awesome&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Interactive GIT cheatsheet</title>
+      <link>http://blog.axitkhurana.com/post/interactive-git-cheatsheet/</link>
+      <pubDate>Sun, 24 Apr 2011 17:48:13 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/interactive-git-cheatsheet/</guid>
+      <description>Interactive GIT cheatsheet</description>
+    </item>
+    
+    <item>
+      <title>Python!</title>
+      <link>http://blog.axitkhurana.com/post/python/</link>
+      <pubDate>Sat, 23 Apr 2011 21:15:47 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/python/</guid>
+      <description>Python!</description>
+    </item>
+    
+    <item>
+      <title>Google I/O! Nice Website</title>
+      <link>http://blog.axitkhurana.com/post/google-io-nice-website/</link>
+      <pubDate>Fri, 08 Apr 2011 00:37:48 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/google-io-nice-website/</guid>
+      <description>Google I/O! Nice Website</description>
+    </item>
+    
+    <item>
+      <title>Pycon 2011: virtual env #python</title>
+      <link>http://blog.axitkhurana.com/post/pycon-2011-virtual-env-python/</link>
+      <pubDate>Wed, 06 Apr 2011 17:58:07 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/pycon-2011-virtual-env-python/</guid>
+      <description>Pycon 2011: virtual env #python</description>
+    </item>
+    
+    <item>
+      <title>Fools ignore complexity; pragmatists suffer it; experts avoid it; geniuses remove it.</title>
+      <link>http://blog.axitkhurana.com/post/fools-ignore-complexity-pragmatists-suffer-it/</link>
+      <pubDate>Mon, 27 Dec 2010 13:52:59 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/fools-ignore-complexity-pragmatists-suffer-it/</guid>
+      <description>Fools ignore complexity; pragmatists suffer it; experts avoid it; geniuses remove it.
+ Alan Perlis (via msg)</description>
+    </item>
+    
+    <item>
+      <title>My Desktop!</title>
+      <link>http://blog.axitkhurana.com/post/my-desktop/</link>
+      <pubDate>Wed, 22 Dec 2010 07:50:55 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/my-desktop/</guid>
+      <description>My Desktop!</description>
+    </item>
+    
+    <item>
+      <title>The mediocre teacher tells. The good teacher explains. The superior teacher states. The great teacher inspires.&amp;ndash; William Arthur Ward</title>
+      <link>http://blog.axitkhurana.com/post/the-mediocre-teacher-tells-the-good-teacher/</link>
+      <pubDate>Tue, 19 Oct 2010 17:21:07 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/the-mediocre-teacher-tells-the-good-teacher/</guid>
+      <description>The mediocre teacher tells. The good teacher explains. The superior teacher states. The great teacher inspires.&amp;ndash; William Arthur Ward
+ </description>
+    </item>
+    
+    <item>
+      <title>Reason to Not Not Do a Startup: The Idea</title>
+      <link>http://blog.axitkhurana.com/post/reason-to-not-not-do-a-startup-the-idea/</link>
+      <pubDate>Sun, 08 Aug 2010 09:57:48 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/reason-to-not-not-do-a-startup-the-idea/</guid>
+      <description>siminoff:
+ Good post on why ideas are really the commodity. Execution is all that matters, it is long, hard and not as sexy but that is where the meat of a startups success is.
+ viacaterpillarcowboy: via thegongshow:
+  Sometimes I ask people I know in my life who I believe would be good entrepreneurs, “have you thought about doing a startup?” I common response to this question is, “Yes, but I don’t feel like I have a good idea.</description>
+    </item>
+    
+  </channel>
+</rss>

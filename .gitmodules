@@ -1,0 +1,4 @@
+[submodule "new-site"]
+	path = new-site
+	url = git@github.com:axitkhurana/new-site.git
+	branch = master

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogging on Akshit Khurana</title>
+    <link>http://blog.axitkhurana.com/tags/blogging/</link>
+    <description>Recent content in Blogging on Akshit Khurana</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Oct 2014 07:39:20 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.axitkhurana.com/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introducing Buster</title>
+      <link>http://blog.axitkhurana.com/post/introducing-ghost/</link>
+      <pubDate>Mon, 13 Oct 2014 07:39:20 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/introducing-ghost/</guid>
+      <description>Buster is a Super simple, Totally awesome, Brute force static site generator for Ghost inspired by Octopress.
+Generate Static Pages. Preview. Deploy to Github Pages.
+The interface setup [--gh-repo=&amp;lt;repo-url&amp;gt;]
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Creates a GIT repository inside static/ directory. If you don&amp;rsquo;t specify the repo-url, buster will ask you the clone URL of your new Github Pages repository.
+generate [--domain=&amp;lt;local-address&amp;gt;]
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Generates static pages from locally running Ghost instance.
+preview
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Preview what&amp;rsquo;s generated on localhost:9000.</description>
+    </item>
+    
+  </channel>
+</rss>

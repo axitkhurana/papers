@@ -1,0 +1,28 @@
+
++++
+date = "2010-08-08 09:57:48"
+draft = false
+title = "Reason to Not Not Do a Startup: The Idea"
+slug = "reason-to-not-not-do-a-startup-the-idea"
+tags = []
+banner = ""
+aliases = ['/reason-to-not-not-do-a-startup-the-idea/']
++++
+
+<p><a href="http://jamessiminoff.com/post/893347044/reason-to-not-not-do-a-startup-the-idea" target="_blank">siminoff</a>:</p>
+<blockquote>
+<p>Good post on why ideas are really the commodity.  Execution is all that matters, it is long, hard and not as sexy but that is where the meat of a startups success is.</p>
+<p> via<a href="http://caterpillarcowboy.com/post/893235459/reason-to-not-not-do-a-startup-the-idea" target="_blank">caterpillarcowboy</a>: via thegongshow:</p>
+<blockquote>
+<blockquote>
+<p>Sometimes I ask people I know in my life who I believe would be good entrepreneurs, “have you thought about doing a startup?” I common response to this question is, “Yes, but I don’t feel like I have a good idea.”</p>
+<p>I typically let the conversation end right there, because I would never push someone to do a startup that is hesitant.  A good entrepreneur has an undeniable drive, a hunger to bust through brick walls and make their startup successful. It’s not possible to try to convince someone with logic to adopt that often-irrational entrepreneurial frame of mind.</p>
+<p>But, if I were to continue the conversation, I don’t think a lack of a good idea is a reason to not do a startup. Want a good idea? <a href="http://ycombinator.com/ideas.html" target="_blank">Here’s 30 great ones that Paul Graham wants to fund</a>. Why would Paul Graham just give away 30 great ideas for free? Because the value of a business is not in the idea. In an early stage company, the value is in the people involved.</p>
+<p>It’s the same reason that anytime I have a startup idea, I immediately write a blog post about it here.  I know that ideas are cheap, and additionally, ideas get better as people contribute feedback to them, shape them, and make them their own. I’d love to see a great team make any of the nagging startup ideas banging around in the back of my head a reality.</p>
+<p>Entrepreneurs almost never take a startup from idea to full execution in a straight line.  The idea is a just a starting point from which people weave and bob around as they try to figure out where the money is in a new market they are creating, or existing market they are co-opting.</p>
+<p>The converse is true here too.  If you’re really passionate about doing a startup because you think you have a great idea, you are actually starting with very little. In fact, the passion you have is very likely far more valuable than the idea itself. So, I would never discourage someone in that position, but my advice at that stage is typically: go get the 2 or 3 smartest people you know and run with the idea. Because people are so important, it’s really difficult to give the idea a fair shot if you do it alone.</p>
+</blockquote>
+<p><a href="http://www.bothsidesofthetable.com/2009/11/19/what-makes-an-entrepreneur-four-lettersjfdi/" target="_blank">JFDI</a></p>
+</blockquote>
+</blockquote>
+

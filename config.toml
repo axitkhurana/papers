@@ -1,0 +1,68 @@
+baseurl = "http://axitkhurana.com"
+title = "AxitKhurana"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+publishDir = "docs"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "bw"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+
+[params]
+    author = "Akshit Khurana"
+    info = ""
+    description = "Akshit Khurana's personal website"
+    keywords = "blog,developer,personal"
+    avatarurl = "images/avatar.jpg"
+
+    favicon_32 = "/img/favicon-32x32.png"
+    favicon_16 = "/img/favicon-16x16.png"
+
+    footercontent = "Hello there!"
+
+    hidecredits = false
+    hidecopyright = false
+
+    rtl = false
+
+    math = true
+    custom_css = ["css/custom.css"]
+
+# Social links
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 1
+    url = "https://github.com/axitkhurana/"
+[[params.social]]
+    name = "Instagram"
+    icon = "fab fa-instagram fa-2x"
+    weight = 2
+    url = "https://instagram.com/axitkhurana/"
+[[params.social]]
+    name = "Twitter"
+    icon = "fab fa-twitter fa-2x"
+    weight = 3
+    url = "https://twitter.com/axitkhurana/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin fa-2x"
+    weight = 4
+    url = "https://linkedin.com/in/axitkhurana/"
+
+
+
+# Menu links
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/blog/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "/about/"

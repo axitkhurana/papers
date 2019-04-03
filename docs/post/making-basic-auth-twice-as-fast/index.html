@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PyCon &#39;15 sprints: first CPython patch</title>
+	
+	<meta name="description" content="">
+	
+	<meta itemprop="name" content="PyCon &#39;15 sprints: first CPython patch">
+	<meta itemprop="description" content="">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="PyCon &#39;15 sprints: first CPython patch">
+	<meta name="twitter:description" content="">
+	
+	<meta name="twitter:site" content="@axitkhurana">
+	<meta name="twitter:creator" content="@axitkhurana">
+	
+	
+	<meta name="og:title" content="PyCon &#39;15 sprints: first CPython patch">
+	<meta name="og:description" content="">
+	<meta name="og:type" content="website">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<script src="/js/caption.js"></script>
+</head>
+
+<body>
+
+
+
+
+<div class="content">
+	<h1>PyCon &#39;15 sprints: first CPython patch <aside> </aside></h1>
+	
+
+<p>The best part of PyCon is not the conference itself. It&rsquo;s after PyCon.</p>
+
+<p>Sprints are 4 days of access to the best python minds helping you build software that the world uses. Django, CPython, Mailman, Sage, pandas, buildbot <a href="https://us.pycon.org/2015/community/sprints/">and many more</a> participated last year.</p>
+
+<p>You don&rsquo;t want to miss sprints. In fact, if you have 3 days only I would suggest you choose sprints over the conference itself. Talks and tutorials are recorded, you can watch them whenever you&rsquo;d like.</p>
+
+<h2 id="cpython">CPython</h2>
+
+<p>I&rsquo;ve had been thinking about contributing to CPython for a long time, occasionally fishing for easy issues in the bug tracker, following the core-mentorship list, downloading the source etc. I was so ready to fix something!</p>
+
+<p>After the intros to sprint projects and I went to the CPython room, started looking at the list of bugs to fix.</p>
+
+<p>I wanted to make a fix that wasn&rsquo;t just documentation or too small to feel like I missed the opportunity. After going through a couple I found this one: <a href="http://bugs.python.org/issue7159">Urllib2 authentication memory</a> which looked significant but good work for 4 days in a new codebase.</p>
+
+<h3 id="the-problem">The problem</h3>
+
+<blockquote>
+<p>For each request requiring HTTP authentication, urllib2 submits the
+request without authentication, receives the server&rsquo;s 401
+error/challenge, then re-submits the request with authentication.</p>
+
+<p>This is compliant behavior. The problem comes in that urllib2 repeats
+this for every ensuing request to <em>the same namespace.</em></p>
+
+<p>At times this is just an inefficiency&ndash;every request gets sent twice,
+often with POST data (which can be sizeable).</p>
+
+<p>Sometimes, especially with large POST bodies, this causes a connection
+failure.</p>
+
+<p>This isn&rsquo;t non-compliant behavior, but RFC2617 (sections 2, 3.3)
+suggests that once an HTTP client authenticates, it pre-emptively send
+authentication with ensuing requests.</p>
+</blockquote>
+
+<p>What this means is every time urllib2 sends a request with basic auth, it will first make the request without credentials, get a 401 unauthorized, check the auth the endpoint expects and then send the same request with credentials.</p>
+
+<p>This is expected behavior but inefficient if we know the endpoint needs the credentials. We&rsquo;re making 2x the number of requests!</p>
+
+<h3 id="why">Why?</h3>
+
+<p>Before I even thought about writing a fix, I was curious why this was RFC compliant behavior. Why not just send the credentials?</p>
+
+<p>I had a feeling this was because of the stateless nature of HTTP, <a href="https://www.ietf.org/rfc/rfc2617.txt">RFC 2617</a> gave me a little more information:</p>
+
+<blockquote>
+<p>The &ldquo;basic&rdquo; authentication scheme is based on the model that the
+   client must authenticate itself with a user-ID and a password for
+   each realm.</p>
+
+<p>Upon receipt of an unauthorized request for a URI within the
+   protection space, the origin server MAY respond with a challenge like
+   the following:</p>
+
+<pre><code> WWW-Authenticate: Basic realm=&quot;WallyWorld&quot;
+</code></pre>
+
+<p>where &ldquo;WallyWorld&rdquo; is the string assigned by the server to identify
+   the protection space of the Request-URI.</p>
+
+<p>To receive authorization, the client sends the userid and password,
+   separated by a single colon (&rdquo;:&ldquo;) character, within a base64
+   encoded string in the credentials.</p>
+
+<p>A client SHOULD assume that all paths at or deeper than the depth of
+   the last symbolic element in the path field of the Request-URI also
+   are within the protection space specified by the Basic realm value of
+   the current challenge. <strong>A client MAY preemptively send the
+   corresponding Authorization header with requests for resources in
+   that space without receipt of <em>another</em> challenge from the server.</strong></p>
+</blockquote>
+
+<h3 id="things-to-fix">Things to fix</h3>
+
+<ol>
+<li>According to the RFC a client <strong>may</strong> preemptively send auth headers after the first challenge, so once we hit the URL without the credentials, get back a 401, we can send the credentials in subsequent requests.</li>
+<li>Another <a href="http://bugs.python.org/issue19494">issue</a> mentions some APIs like Github doesn&rsquo;t send 401 for unauthorized, they send 404s which means we should have the ability to directly send the credentials without getting the first 401.</li>
+</ol>
+
+<h3 id="architecture">Architecture</h3>
+
+<p>The API isn&rsquo;t the most friendly one (you should use <a href="http://docs.python-requests.org/en/master/">requests</a> instead), but this is how you make a request:</p>
+
+<pre><code>  51 # set up authentication info
+  52 authinfo = urllib.request.HTTPBasicAuthHandler()
+  53 authinfo.add_password(realm='PDQ Application',
+  54                       uri='https://mahler:8092/site-updates.py',
+  55                       user='klem',
+  56                       passwd='geheim$parole')
+  57
+  58 proxy_support = urllib.request.ProxyHandler({&quot;http&quot; : &quot;http://ahad-haam:3128&quot;})
+  59
+  60 # build a new opener that adds authentication and caching FTP handlers
+  61 opener = urllib.request.build_opener(proxy_support, authinfo,
+  62                                      urllib.request.CacheFTPHandler)
+  63
+  64 # install it
+  65 urllib.request.install_opener(opener)
+  66
+  67 f = urllib.request.urlopen('http://www.python.org/')
+</code></pre>
+
+<p>Two classes we care about here:</p>
+
+<ol>
+<li>HTTPBasicAuthHandler: specifies what do  for different status codes with methods</li>
+<li>PasswordManager: manages username, password, realm for your requests</li>
+</ol>
+
+<h3 id="initial-approach">Initial approach</h3>
+
+<p>The <a href="https://hg.python.org/cpython/rev/fb3061ba6fd2">existing patch</a> added a new <code>BasicAuthHandler</code> subclass that sends the credentials without even waiting for the first 401. That would work the Github case but not the first case.</p>
+
+<h3 id="proposed-patch">Proposed patch</h3>
+
+<p>We released instead of creating a subclassing <code>BasicAuthHandler</code> we could just add a new password manager that subclasses <code>HTTPPasswordMgrWithDefaultRealm</code>. Since we want to support sending credentials even before we get a 401 response from the server (which has the realm value), we store the password in a default (<code>None</code>) realm.</p>
+
+<h4 id="httppasswordmgrwithpriorauth">HTTPPasswordMgrWithPriorAuth</h4>
+
+<p>Subclasses <code>HTTPPasswordMgrWithDefaultRealm</code> and adds a <code>uri -&gt; is_authenticated</code> mapping. What that gives us is that if the user has already authenticated for a particular URL root, we don&rsquo;t need to get a 401 from the server for every request for that URL tree, we can just send the credentials.</p>
+
+<h5 id="whaat">Whaat?</h5>
+
+<ol>
+<li>Request to axitkhurana.com/locked/ (say this endpoint requires basic auth)</li>
+<li>We get a 401 back</li>
+<li>We send credentials this time</li>
+<li>Get a 200 SUCCESS back</li>
+<li>We update the dictionary mapping <code>{'/locked/': True}</code></li>
+<li>Every subsequent request to /locked/ or /locked/abc sends the credentials without waiting for 401, <em>making everything ~2x faster</em></li>
+</ol>
+
+<h5 id="what-about-the-github-case">What about the Github case?</h5>
+
+<p>Sending credentials even before the first 401.</p>
+
+<p>Use the method:</p>
+
+<ul>
+<li><code>update_authenticated(self, uri, is_authenticated=False)</code>: Updates the <code>is_authenticated</code> flag for the given <em>uri</em> or list of URIs.</li>
+</ul>
+
+<p>Set <code>is_authenticated</code> to <code>True</code> before making a request manually instead of waiting for the first successful auth. Voila!</p>
+
+<h3 id="accepted">Accepted</h3>
+
+<p>After some design discussions, tests, a couple more useful methods and <a href="https://twitter.com/rdavidmurray">R. David Murray</a> rewriting the docs to make them readable, I finally got my <a href="https://hg.python.org/cpython/rev/1b9e81cb83bc">first contribution to CPython</a>!</p>
+
+</div>
+
+
+<footer>
+
+	<p><small><em>Written May 29, 2016. </em>
+		 
+		Send feedback to <a  href="https://twitter.com/intent/tweet?text=%40axitkhurana%20%23postmaking-basic-auth-twice-as-fast%20">@axitkhurana</a>.
+		
+	</small></p>
+
+	<p>
+	<a href="/post/introducing-ghost/">← Introducing Buster</a>&nbsp;
+	<a href="/post/about/" style="float:right;">About →</a>
+	</p>
+
+
+</footer>
+
+
+
+
+
+</body>
+</html>

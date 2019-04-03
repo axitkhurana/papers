@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Akshit Khurana</title>
+    <link>http://blog.axitkhurana.com/tags/python/</link>
+    <description>Recent content in Python on Akshit Khurana</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 09 Jun 2012 19:36:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://blog.axitkhurana.com/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python Decorators</title>
+      <link>http://blog.axitkhurana.com/post/python-decorators/</link>
+      <pubDate>Sat, 09 Jun 2012 19:36:00 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/python-decorators/</guid>
+      <description>We know python functions are objects:
+can be assigned to a variable can be defined in another function Hence, a function can return another function.
+Decorators are wrappers, they let you execute code before and after a function without the need to modify the function itself.
+1 def decorator(fn): 2  def wrapper(): 3  print &amp;ldquo;Before fn runs&amp;rdquo; 4  fn() 5  print &amp;ldquo;After fn runs&amp;rdquo; 6  return wrapper  Decorator syntax:</description>
+    </item>
+    
+    <item>
+      <title>Braces in Python</title>
+      <link>http://blog.axitkhurana.com/post/braces-in-python/</link>
+      <pubDate>Wed, 11 Jan 2012 20:25:01 +0000</pubDate>
+      
+      <guid>http://blog.axitkhurana.com/post/braces-in-python/</guid>
+      <description>One of the hidden features of python I discovered today is that if you don&amp;rsquo;t like whitespace, you can use the C-style {} by issuing:
+&amp;gt; &amp;gt; &amp;gt; from __future__ import braces
+This is what python replies:
+ File &amp;ldquo;&amp;lt;stdin&amp;gt;&amp;rdquo;, line 1SyntaxError: not a chance
+:D</description>
+    </item>
+    
+  </channel>
+</rss>
