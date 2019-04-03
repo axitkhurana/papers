@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Akshit Khurana">
+    <meta name="description" content="Akshit Khurana&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="UUIDs"/>
+<meta name="twitter:description" content="This blog post is a part of “the things I learned while working on popcorn”, Popcorn tracks usage of linux packages. Ionuț Arțăriși is my mentor for this GSoC project for openSUSE.
+Popcorn requires UUIDs (Universally unique IDs) so that it doesn&rsquo;t receive submissions from the same system again before a certain period of time.
+We used to use smolt id, but smolt package is not present in all Linux distributions."/>
+
+    <meta property="og:title" content="UUIDs" />
+<meta property="og:description" content="This blog post is a part of “the things I learned while working on popcorn”, Popcorn tracks usage of linux packages. Ionuț Arțăriși is my mentor for this GSoC project for openSUSE.
+Popcorn requires UUIDs (Universally unique IDs) so that it doesn&rsquo;t receive submissions from the same system again before a certain period of time.
+We used to use smolt id, but smolt package is not present in all Linux distributions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://axitkhurana.com/blog/uuids/" />
+<meta property="article:published_time" content="2012-06-30T15:56:26&#43;00:00"/>
+<meta property="article:modified_time" content="2012-06-30T15:56:26&#43;00:00"/>
+
+
+    
+      <base href="http://axitkhurana.com/blog/uuids/">
+    
+    <title>
+  UUIDs · AxitKhurana
+</title>
+
+    
+      <link rel="canonical" href="http://axitkhurana.com/blog/uuids/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://axitkhurana.com/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://axitkhurana.com/css/custom.css">
+    
+
+    <link rel="icon" type="image/png" href="http://axitkhurana.com/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://axitkhurana.com/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.54.0" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://axitkhurana.com">
+      AxitKhurana
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://axitkhurana.com/blog/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://axitkhurana.com/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>UUIDs</h1>
+    </header>
+
+    <p><em>This blog post is a part of “the things I learned while working on popcorn”, Popcorn tracks usage of linux packages. <a href="http://mapleoin.eu/" target="_blank">Ionuț Arțăriși</a></em><em> is my mentor for this <a href="http://www.google-melange.com/gsoc/proposal/review/google/gsoc2012/axitkhurana/3002" title="GSoC Proposal" target="_blank">GSoC project</a> for openSUSE.</em></p>
+<p>Popcorn requires UUIDs (Universally unique IDs) so that it doesn&rsquo;t receive submissions from the same system again before a certain period of time.</p>
+<p>We used to use smolt id, but smolt package is not present in all Linux distributions.</p>
+<p>So on a quest to find a universally unique ID that is present on all distributions, Petr Uzel pointed me to <a href="http://0pointer.de/blog/projects/ids.html" target="_blank">Lennart&rsquo;s Blog Post</a>.</p>
+<p><strong>tl;dr</strong> use/var/lib/dbus/machine-id if you are looking for a globally unique id for a Linux system.</p>
+<p><span>Hardware IDs:</span></p>
+<ul><li><strong>/sys/class/dmi/id/product_uuid</strong>: mainboard uuid</li>
+<li><strong>CPUID/EAX=3</strong>: CPU serial number</li>
+<li><strong>/sys/class/net/*/address</strong>: One or more network MAC addresses</li>
+<li><strong>/sys/bus/usb/devices/*/serial</strong>:Serial numbers of various USB devices</li>
+</ul><p>The problems with hardware IDs are that:</p>
+<ul><li>They are bound to specific, replaceable hardware</li>
+<li>Not universally available</li>
+<li>Filled with bogus data/random in virtual environments</li>
+</ul><p><span>Software IDs:</span></p>
+<ul><li><strong>/proc/sys/kernel/random/boot_id</strong>: Random ID unique for each boot</li>
+<li><strong>/var/lib/dbus/machine-id</strong>: identifies specific Linux installation.<br/><ul><li>Doesn&rsquo;t change if hardware is replaced</li>
+<li>Reliable in virtualized environments</li>
+<li>Globally unique</li>
+</ul></li>
+<li><strong>/proc/self/sessionid: </strong>identifies a specific login session, maintained by kernel and shared by each process of a session. In some distributions this is always(uint32_t) -1</li>
+<li><strong>getuid()</strong>: To identify a particular user. Locally unique, may be reassigned to new user if users are deleted.</li>
+</ul><p>We can combine locally unique ids with /var/lib/dbus/machine-id to generate globally unique ids for a particular user or session.</p>
+<p><span>Generating UUIDs:</span></p>
+<p>You can also generate UUIDs using uuidgen command or simply read 16 bytes from /dev/random</p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hello there!</p>
+    
+     © 2019
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
