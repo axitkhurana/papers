@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Akshit Khurana">
+    <meta name="description" content="Akshit Khurana&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introducing Buster"/>
+<meta name="twitter:description" content="Buster is a Super simple, Totally awesome, Brute force static site generator for Ghost inspired by Octopress.
+Generate Static Pages. Preview. Deploy to Github Pages.
+The interface setup [--gh-repo=&lt;repo-url&gt;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a GIT repository inside static/ directory. If you don&rsquo;t specify the repo-url, buster will ask you the clone URL of your new Github Pages repository.
+generate [--domain=&lt;local-address&gt;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generates static pages from locally running Ghost instance.
+preview
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preview what&rsquo;s generated on localhost:9000."/>
+
+    <meta property="og:title" content="Introducing Buster" />
+<meta property="og:description" content="Buster is a Super simple, Totally awesome, Brute force static site generator for Ghost inspired by Octopress.
+Generate Static Pages. Preview. Deploy to Github Pages.
+The interface setup [--gh-repo=&lt;repo-url&gt;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a GIT repository inside static/ directory. If you don&rsquo;t specify the repo-url, buster will ask you the clone URL of your new Github Pages repository.
+generate [--domain=&lt;local-address&gt;]
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generates static pages from locally running Ghost instance.
+preview
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preview what&rsquo;s generated on localhost:9000." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://axitkhurana.com/blog/introducing-ghost/" />
+<meta property="article:published_time" content="2014-10-13T07:39:20&#43;00:00"/>
+<meta property="article:modified_time" content="2014-10-13T07:39:20&#43;00:00"/>
+
+
+    
+      <base href="http://axitkhurana.com/blog/introducing-ghost/">
+    
+    <title>
+  Introducing Buster · AxitKhurana
+</title>
+
+    
+      <link rel="canonical" href="http://axitkhurana.com/blog/introducing-ghost/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://axitkhurana.com/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://axitkhurana.com/css/custom.css">
+    
+
+    <link rel="icon" type="image/png" href="http://axitkhurana.com/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://axitkhurana.com/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.54.0" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://axitkhurana.com">
+      AxitKhurana
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://axitkhurana.com/blog/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://axitkhurana.com/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Introducing Buster</h1>
+    </header>
+
+    
+
+<p><img src="http://axitkhurana.com/images/2014/10/ghost.png" alt="Ghost" /></p>
+
+<p><a href="https://github.com/axitkhurana/buster">Buster</a> is a Super simple, Totally awesome, Brute force <strong>static site generator for <a href="http://ghost.org" title="The Open Source Blogging Platform">Ghost</a></strong> inspired by Octopress.</p>
+
+<p><em>Generate Static Pages. Preview. Deploy to Github Pages.</em></p>
+
+<h2 id="the-interface">The interface</h2>
+
+<p><code>setup [--gh-repo=&lt;repo-url&gt;]</code></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a GIT repository inside <code>static/</code> directory. If you don&rsquo;t specify the <code>repo-url</code>, buster will ask you the clone URL of your new Github Pages repository.</p>
+
+<p><code>generate [--domain=&lt;local-address&gt;]</code></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generates static pages from locally running Ghost instance.</p>
+
+<p><code>preview</code></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Preview what&rsquo;s generated on <code>localhost:9000</code>.</p>
+
+<p><code>deploy</code></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commits and deploys changes static files to Github repository.</p>
+
+<p><code>add-domain &lt;domain-name&gt;</code></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Adds CNAME file with custom domain name as required by Github Pages.</p>
+
+<p>Buster assumes you have <code>static/</code> folder in your current directory (or creates one during <code>setup</code> command). You can specify custom directory path using <code>[--dir=&lt;path&gt;]</code> option to any of the above commands.</p>
+
+<h2 id="ghost-what">Ghost. What?</h2>
+
+<p><a href="http://ghost.org/features/" title="Ghost Features.">Ghost</a> is a beautifully designed, completely customisable and completely <a href="https://github.com/TryGhost/Ghost" title="Ghost on Github">Open Source</a> <strong>Blogging Platform</strong>. If you haven&rsquo;t tried it out yet, check it out. You&rsquo;ll love it.</p>
+
+<p>The Ghost Foundation is not-for-profit organization funding open source software and trying to completely change the world of online publishing. Consider <a href="http://ghost.org/about/donate/" title="You are awesome!">donating to Ghost</a></p>
+
+<h3 id="buster">Buster?</h3>
+
+<p>Inspired by THE GhostBusters.</p>
+
+<p><img src="http://upload.wikimedia.org/wikipedia/en/c/c7/Ghostbusters_cover.png" alt="Ghost Buster Movie" /></p>
+
+<h2 id="contributing">Contributing</h2>
+
+<p>Source is available on <a href="https://github.com/axitkhurana/buster/">Github</a>. Checkout the existing <a href="https://github.com/axitkhurana/buster/issues">issues</a> or create a new one. Pull requests welcome!</p>
+
+<hr />
+
+<p><em>Made with <a href="http://en.wikipedia.org/wiki/Jugaad">jugaad</a> in <a href="http://en.wikipedia.org/wiki/Delhi">Dilli</a>.</em></p>
+
+<p><sub>Ghost icon designed by <a href="http://thenounproject.com/noun/ghost/#icon-No3941">Paulo Volkova</a>, 2012</sub></p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hello there!</p>
+    
+     © 2019
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

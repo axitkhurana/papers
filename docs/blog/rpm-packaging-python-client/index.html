@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Akshit Khurana">
+    <meta name="description" content="Akshit Khurana&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="RPM: Packaging python client"/>
+<meta name="twitter:description" content="Package Management Systems take care of everything from installation, upgrading, configuring to removing software packages. They are the original &ldquo;Application Stores&rdquo;. RPM is one such package manager used in various distributions like Fedora, CentOS, openSUSE, Mandriva etc.
+Packages, in addition to the software and data, also have some meta data with them, such as the version number, license and dependencies.
+To create an RPM package, you need the source files and a spec file that has information about your package."/>
+
+    <meta property="og:title" content="RPM: Packaging python client" />
+<meta property="og:description" content="Package Management Systems take care of everything from installation, upgrading, configuring to removing software packages. They are the original &ldquo;Application Stores&rdquo;. RPM is one such package manager used in various distributions like Fedora, CentOS, openSUSE, Mandriva etc.
+Packages, in addition to the software and data, also have some meta data with them, such as the version number, license and dependencies.
+To create an RPM package, you need the source files and a spec file that has information about your package." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://axitkhurana.com/blog/rpm-packaging-python-client/" />
+<meta property="article:published_time" content="2012-11-25T19:12:52&#43;00:00"/>
+<meta property="article:modified_time" content="2012-11-25T19:12:52&#43;00:00"/>
+
+
+    
+      <base href="http://axitkhurana.com/blog/rpm-packaging-python-client/">
+    
+    <title>
+  RPM: Packaging python client · AxitKhurana
+</title>
+
+    
+      <link rel="canonical" href="http://axitkhurana.com/blog/rpm-packaging-python-client/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://axitkhurana.com/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://axitkhurana.com/css/custom.css">
+    
+
+    <link rel="icon" type="image/png" href="http://axitkhurana.com/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://axitkhurana.com/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.54.0" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://axitkhurana.com">
+      AxitKhurana
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://axitkhurana.com/blog/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://axitkhurana.com/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>RPM: Packaging python client</h1>
+    </header>
+
+    <p><strong>Package Management Systems </strong>take care of everything from installation, upgrading, configuring to removing software packages. They are the original &ldquo;Application Stores&rdquo;. RPM is one such package manager used in various distributions like Fedora, CentOS, openSUSE, Mandriva etc.</p>
+<p>Packages, in addition to the software and data, also have some meta data with them, such as the version number, license and dependencies.</p>
+<p>To create an RPM package, you need the source files and a spec file that has information about your package.</p>
+<p>A specification file looks like this:</p>
+<pre>Name:      popcorn
+Version:   0.1
+Release:   0
+Summary:   Client for popularity contest for RPMs
+License:   MIT
+Url:       <a href="http://github.com/opensuse/popcorn" target="_blank">http://github.com/opensuse/popcorn</a>
+Group:     System/Packages
+Source:    %{name}.tar.gz
+Requires:  cron, python, rpm-python
+BuildRoot: %{_tmppath}/%{name}-%{version}-build
+BuildArch: noarch
+
+%description
+Popcorn tracks the collection of packages and repositories that users have installed.
+
+%prep
+%setup -q -c -n %{name}
+
+%build
+
+%install
+install -Dm755 popcorn-client %{buildroot}%{_bindir}/popcorn
+install -Dm644 popcorn.conf   %{buildroot}%{_sysconfdir}/popcorn.conf
+install -Dm755 popcorn.cron   %{buildroot}%{_sysconfdir}/cron.monthly/popcorn
+install -Dm644 popcorn.log %{buildroot}%{_localstatedir}/log/popcorn.log
+
+%clean
+rm -rf %{buildroot}
+
+%files
+%defattr(-, root, root, -)
+%doc README LICENSE
+%{_bindir}/popcorn
+%config(noreplace) %{_sysconfdir}/popcorn.conf
+%config(noreplace) %{_sysconfdir}/cron.monthly/popcorn
+%ghost %{_localstatedir}/log/popcorn.log
+
+%changelog
+</pre>
+<p>Keep your spec file in <code>~/rpmbuild/SPECS </code>directory, and source files in <code>~/rpmbuild/SOURCES </code> directory.</p>
+<p>Common tags used in SPEC file:</p>
+<ul><li>Name: The name of the package, SPEC file name should match this name. It should follow the <a href="http://en.opensuse.org/openSUSE:Package_naming_guidelines" target="_blank">package naming guidelines</a>.</li>
+<li>Version: Version number of your software.</li>
+<li>Release: Start from 1 for a version, if a new package is released for the same version of software, increment release number.</li>
+<li>Summary: One line summary of the package.</li>
+<li>License: The open source license used. E.g. MIT, GPLv2</li>
+<li>Url: The project website URL.</li>
+<li>Group: Pre existing group for type of software. You can find the list of groups in <code>/usr/share/doc/packages/rpm/GROUPS file on openSUSE. </code></li>
+<li>Sources: Name of compressed source file.</li>
+<li>Requires: List of packages required to run the software.</li>
+<li>BuildArch: If the package is architecture independent, mention noarch.</li>
+<li>%description: Longer description of the software.</li>
+<li>%prep: Commands to prepare the program<em>, </em>e.g. decompressing the source files</li>
+<li>%build: Commands for building/compiling source files for installation.</li>
+<li>%install: Commands to install the program. This should copy files from buildroot to builddir.[1]</li>
+<li>%clean: For cleaning the buildroot directory.</li>
+<li>%files: Files to be placed in the binary RPM.</li>
+<li>%changelog: Changes in the package.</li>
+</ul><p>Use <code>rpmbuild -ba NAME.spec </code>to build the pacakage.</p>
+<p>rpmbuild reads the SPEC file and perform the following operations:</p>
+<ul><li>unpacks (%prep) sources from source directory to build directory</li>
+<li>compiles (%build) files in build directory</li>
+<li>%install: reads from build directory, and writes the files to be installed by an end user, in the build root directory.</li>
+<li>creates binary rpm, source rpm package reading from build root directory.</li>
+</ul><p>RPMs are created in <code>%_rpmdir</code> directory, <code>~/rpmbuild/RPMS/noarch/</code> in this case. Use rpmlint to check common problems in RPM package.</p>
+<p>Files included in packaged Popcorn[2] client:</p>
+<ol><li>popcorn: the client python script that collects anonymous package usage data and sends to popcorn server.</li>
+<li>popcorn.conf: configuration file having basic settings for popcorn.</li>
+<li>popcorn.log: log file for data sent to server.</li>
+</ol><p><em>Popcorn is an openSUSE project[3] that tracks usage of linux packages.</em></p>
+<p><br/>Useful links:</p>
+<ul><li><a href="https://fedoraproject.org/wiki/Packaging:RPMMacros" target="_blank">https://fedoraproject.org/wiki/Packaging:RPMMacros</a></li>
+<li><a href="http://www.rpm.org/max-rpm/s1-rpm-inside-files-list-directives.html" target="_blank">http://www.rpm.org/max-rpm/s1-rpm-inside-files-list-directives.html</a></li>
+</ul><p>[1] Reference: <a href="https://fedoraproject.org/wiki/How_to_create_an_RPM_package" target="_blank">Fedora&rsquo;s Guide for creating an RPM package</a></p>
+<p>[2] My <a href="http://www.google-melange.com/gsoc/proposal/review/google/gsoc2012/axitkhurana/3002" target="_blank">GSoC &lsquo;12 Proposal</a> for the project. Thanks <a href="http://mapleoin.eu/" target="_blank">Ionuț Arțăriși</a> for mentoring :)</p>
+<p>[3] <a href="https://github.com/opensuse/popcorn" target="_blank">https://github.com/opensuse/popcorn</a></p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hello there!</p>
+    
+     © 2019
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Akshit Khurana">
+    <meta name="description" content="Akshit Khurana&#39;s personal website">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python Decorators"/>
+<meta name="twitter:description" content="We know python functions are objects:
+can be assigned to a variable can be defined in another function Hence, a function can return another function.
+Decorators are wrappers, they let you execute code before and after a function without the need to modify the function itself.
+1 def decorator(fn): 2  def wrapper(): 3  print &ldquo;Before fn runs&rdquo; 4  fn() 5  print &ldquo;After fn runs&rdquo; 6  return wrapper  Decorator syntax:"/>
+
+    <meta property="og:title" content="Python Decorators" />
+<meta property="og:description" content="We know python functions are objects:
+can be assigned to a variable can be defined in another function Hence, a function can return another function.
+Decorators are wrappers, they let you execute code before and after a function without the need to modify the function itself.
+1 def decorator(fn): 2  def wrapper(): 3  print &ldquo;Before fn runs&rdquo; 4  fn() 5  print &ldquo;After fn runs&rdquo; 6  return wrapper  Decorator syntax:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://axitkhurana.com/blog/python-decorators/" />
+<meta property="article:published_time" content="2012-06-09T19:36:00&#43;00:00"/>
+<meta property="article:modified_time" content="2012-06-09T19:36:00&#43;00:00"/>
+
+
+    
+      <base href="http://axitkhurana.com/blog/python-decorators/">
+    
+    <title>
+  Python Decorators · AxitKhurana
+</title>
+
+    
+      <link rel="canonical" href="http://axitkhurana.com/blog/python-decorators/">
+    
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
+
+    
+      
+      
+      <link rel="stylesheet" href="http://axitkhurana.com/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+
+    
+      <link rel="stylesheet" href="http://axitkhurana.com/css/custom.css">
+    
+
+    <link rel="icon" type="image/png" href="http://axitkhurana.com/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://axitkhurana.com/img/favicon-16x16.png" sizes="16x16">
+
+    <meta name="generator" content="Hugo 0.54.0" />
+  </head>
+
+  <body class=" ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="http://axitkhurana.com">
+      AxitKhurana
+    </a>
+    <input type="checkbox" id="menu-toggle" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="fas fa-bars"></i></label>
+    <ul class="navigation-list">
+      
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://axitkhurana.com/blog/">Blog</a>
+          </li>
+        
+          <li class="navigation-item">
+            <a class="navigation-link" href="http://axitkhurana.com/about/">About</a>
+          </li>
+        
+      
+      
+    </ul>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container page">
+  <article>
+    <header>
+      <h1>Python Decorators</h1>
+    </header>
+
+    <p><p>We know python functions are objects:</p>
+<ul><li>can be assigned to a variable</li>
+<li>can be defined in another function</li>
+</ul><p>Hence, a function can return another function.</p>
+<p>Decorators are wrappers, they let you execute code before and after a function without the need to modify the function itself.</p>
+<pre><span class="lnr">1 </span><span class="Statement">def</span> <span class="Identifier">decorator</span>(fn):
+<span class="lnr">2 </span>    <span class="Statement">def</span> <span class="Identifier">wrapper</span>():
+<span class="lnr">3 </span>        <span class="Identifier">print</span> <span class="Constant">&ldquo;Before fn runs&rdquo;</span>
+<span class="lnr">4 </span>        fn()
+<span class="lnr">5 </span>        <span class="Identifier">print</span> <span class="Constant">&ldquo;After fn runs&rdquo;</span>
+<span class="lnr">6 </span>    <span class="Statement">return</span> wrapper<br/> </pre>
+<p>Decorator syntax:</p>
+<pre><span class="lnr"> 1 </span><span class="PreProc">@</span><span class="Identifier">decorator</span>
+<span class="lnr"> 2 </span><span class="Statement">def</span> <span class="Identifier">standalone_fn</span>():
+<span class="lnr"> 3 </span>    <span class="Identifier">print</span> <span class="Constant">&ldquo;this is a stand alone fn&rdquo;</span>
+<span class="lnr"> 4 </span>
+<span class="lnr"> 5 </span>standalone_fn()
+<span class="lnr"> 6 </span>
+<span class="lnr"> 7 </span><span class="Comment"># prints:</span>
+<span class="lnr"> 8 </span><span class="Comment"># Before fn runs</span>
+<span class="lnr"> 9 </span><span class="Comment"># this is a stand alone fn</span>
+<span class="lnr">10 </span><span class="Comment"># After fn runs</span></pre>
+<p>This is equivalent to manually doing:</p>
+<pre><span class="lnr">1 </span><span class="Comment"># this is equivalent to:</span>
+<span class="lnr">2 </span>standalone_fn = decorator(standalone_fn)
+<span class="lnr">3 </span>
+<span class="lnr">4 </span>standalone_fn()
+<span class="lnr">5 </span>
+<span class="lnr">6 </span><span class="Comment"># prints:</span>
+<span class="lnr">7 </span><span class="Comment"># Before fn runs</span>
+<span class="lnr">8 </span><span class="Comment"># this is a stand alone fn</span>
+<span class="lnr">9 </span><span class="Comment"># After fn runs</span>
+</pre>
+<p>Say, my standalone function had arguments, how do we pass arguments to decorators? Let the wrapper pass the arguments.</p>
+<pre><span class="lnr">1 </span><span class="Statement">def</span> <span class="Identifier">decorator</span>(fn):
+<span class="lnr">2 </span>    <span class="Statement">def</span> <span class="Identifier">wrapper</span>(*args, **kwargs):
+<span class="lnr">3 </span>        <span class="Identifier">print</span> <span class="Constant">&ldquo;Before fn runs&rdquo;</span>
+<span class="lnr">4 </span>        fn(*args, **kwargs)
+<span class="lnr">5 </span>        <span class="Identifier">print</span> <span class="Constant">&ldquo;After fn runs&rdquo;</span>
+<span class="lnr">6 </span>    <span class="Statement">return</span> wrapper
+</pre>
+<p>Passing arguments to decorators:</p>
+<p>What if you want decorators to have arguments themselves. You need to wrap the decorator with a function which accepts those arguments and returns your decorator.</p>
+<pre><span class="lnr"> 1 </span><span class="Statement">def</span> <span class="Identifier">decorator_maker</span>(arg1, arg2):
+<span class="lnr"> 2 </span>    <span class="Statement">def</span> <span class="Identifier">decorator</span>(f):
+<span class="lnr"> 3 </span>        <span class="Statement">def</span> <span class="Identifier">wrapper</span>(*args, **kwargs):
+<span class="lnr"> 4 </span>            <span class="Identifier">print</span> arg1
+<span class="lnr"> 5 </span>            f(*args, **kwargs)
+<span class="lnr"> 6 </span>            <span class="Identifier">print</span> arg2
+<span class="lnr"> 7 </span>        <span class="Statement">return</span> wrapper
+<span class="lnr"> 8 </span>    <span class="Statement">return</span> decorator
+<span class="lnr"> 9 </span>
+<span class="lnr">10 </span><span class="Comment"># this can be used as:</span>
+<span class="lnr">11 </span>
+<span class="lnr">12 </span><span class="PreProc">@</span><span class="Identifier">decorator_maker</span>(<span class="Constant">&lsquo;before&rsquo;</span>, <span class="Constant">&lsquo;after&rsquo;</span>)
+<span class="lnr">13 </span><span class="Statement">def</span> <span class="Identifier">fn_to_decorate</span>(fn_a1, fn_a2):
+<span class="lnr">14 </span>    <span class="Comment"># do something here like:</span>
+<span class="lnr">15 </span>    <span class="Identifier">print</span> fn_a1, fn_a2
+</pre>
+<p>Let&rsquo;s take an example now, I used this for returning JSON in addition to HTML from flask view functions that return dicts.</p>
+<pre><span class="lnr"> 1 </span><span class="Statement">def</span> <span class="Identifier">render</span>(template=<span class="Identifier">None</span>):
+<span class="lnr"> 2 </span>    <span class="Statement">def</span> <span class="Identifier">decorator</span>(f):
+<span class="lnr"> 3 </span>        <span class="PreProc">@</span><span class="Identifier">wraps</span>(f)
+<span class="lnr"> 4 </span>        <span class="Statement">def</span> <span class="Identifier">decorated_function</span>(*args, **kwargs):
+<span class="lnr"> 5 </span>            ctx = f(*args, **kwargs)
+<span class="lnr"> 6 </span>            <span class="Statement">if</span> ctx <span class="Statement">is</span> <span class="Identifier">None</span>:
+<span class="lnr"> 7 </span>                ctx = {}
+<span class="lnr"> 8 </span>            <span class="Statement">elif</span> <span class="Statement">not</span> <span class="Identifier">isinstance</span>(ctx, <span class="Identifier">dict</span>):
+<span class="lnr"> 9 </span>                <span class="Statement">return</span> ctx
+<span class="lnr">10 </span>            render_type = request_wants_json()
+<span class="lnr">11 </span>            <span class="Statement">if</span> render_type:
+<span class="lnr">12 </span>                <span class="Statement">return</span> jsonify(ctx)
+<span class="lnr">13 </span>            <span class="Statement">return</span> render_template(template, **ctx)
+<span class="lnr">14 </span>        <span class="Statement">return</span> decorated_function
+<span class="lnr">15 </span>    <span class="Statement">return</span> decorator
+</pre>
+<p>What this decorator does is, it takes the dict returned by view (the function f) in ctx,  if the requested wanted JSON, returns the jsonified dict, else renders as HTML using the template. The decorator itself requires an argument for template.</p>
+<p>What is @wraps(f) ?</p>
+<p>When you use a decorator, you&rsquo;re replacing one function with another. That means if you print f.<strong>name</strong> it will decorated_function instead of f (if @wraps(f) is not used). Quoting from docs</p>
+<p>This is a convenience function for invoking <span class="pre">partial(update_wrapper,</span> <span class="pre">wrapped=wrapped,</span> <span class="pre">assigned=assigned,</span> <span class="pre">updated=updated)</span> as a function decorator when defining a wrapper function.</p>
+<p>Bibliography:</p>
+<ul><li><a href="http://stackoverflow.com/a/1594484/775446" title="Stack Overflow answer" target="_blank">e-satis&rsquo;s awesome answer on SO</a></li>
+<li><a href="http://docs.python.org/library/functools.html#functools.wraps" title="functools.wraps" target="_blank">Python docs on wraps</a></li>
+<li><a href="http://flask.pocoo.org/docs/patterns/viewdecorators/" title="Flask view decorators" target="_blank">Flask view decorators</a></li>
+</ul></p>
+
+  </article>
+</section>
+
+
+      </div>
+
+      <footer class="footer">
+  <section class="container">
+    
+      <p>Hello there!</p>
+    
+     © 2019
+    
+       · 
+      Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+    
+  </section>
+</footer>
+
+    </main>
+
+    
+
+  </body>
+
+</html>
