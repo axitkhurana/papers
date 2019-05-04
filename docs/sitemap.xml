@@ -3,328 +3,338 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://axitkhurana.com/blog/2016-in-pictures/</loc>
+    <loc>https://rl.axitkhurana.com/blog/2016-in-pictures/</loc>
     <lastmod>2016-12-29T00:52:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/about/</loc>
+    <loc>https://rl.axitkhurana.com/blog/about/</loc>
     <lastmod>2016-12-29T00:52:39+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/making-basic-auth-twice-as-fast/</loc>
+    <loc>https://rl.axitkhurana.com/</loc>
+    <lastmod>2016-12-29T00:52:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/blog/</loc>
+    <lastmod>2016-12-29T00:52:39+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/blog/making-basic-auth-twice-as-fast/</loc>
     <lastmod>2016-05-29T03:52:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/introducing-ghost/</loc>
+    <loc>https://rl.axitkhurana.com/tags/blogging/</loc>
+    <lastmod>2014-10-13T07:39:20+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/tags/buster/</loc>
+    <lastmod>2014-10-13T07:39:20+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/tags/ghost/</loc>
+    <lastmod>2014-10-13T07:39:20+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/tags/github/</loc>
+    <lastmod>2014-10-13T07:39:20+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/blog/introducing-ghost/</loc>
     <lastmod>2014-10-13T07:39:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/iitr-convocation-2013/</loc>
+    <loc>https://rl.axitkhurana.com/tags/</loc>
+    <lastmod>2014-10-13T07:39:20+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/tags/convocation/</loc>
+    <lastmod>2014-10-13T07:24:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/tags/iit-roorkee/</loc>
+    <lastmod>2014-10-13T07:24:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/blog/iitr-convocation-2013/</loc>
     <lastmod>2014-10-13T07:24:26+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/the-soul-of-a-website/</loc>
+    <loc>https://rl.axitkhurana.com/tags/internet/</loc>
+    <lastmod>2014-10-13T06:32:24+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/tags/reddit/</loc>
+    <lastmod>2014-10-13T06:32:24+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/blog/the-soul-of-a-website/</loc>
     <lastmod>2014-10-13T06:32:24+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/our-deepest-fear-is-not-that-we-are-inadequate/</loc>
+    <loc>https://rl.axitkhurana.com/tags/things-i-like/</loc>
+    <lastmod>2014-10-13T06:32:24+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/blog/our-deepest-fear-is-not-that-we-are-inadequate/</loc>
     <lastmod>2013-09-10T15:20:04+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/rpm-packaging-python-client/</loc>
+    <loc>https://rl.axitkhurana.com/blog/rpm-packaging-python-client/</loc>
     <lastmod>2012-11-25T19:12:52+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/uuids/</loc>
+    <loc>https://rl.axitkhurana.com/blog/uuids/</loc>
     <lastmod>2012-06-30T15:56:26+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/building-an-api-part-1/</loc>
+    <loc>https://rl.axitkhurana.com/blog/building-an-api-part-1/</loc>
     <lastmod>2012-06-17T14:55:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/python-decorators/</loc>
+    <loc>https://rl.axitkhurana.com/tags/decorators/</loc>
+    <lastmod>2012-06-09T19:36:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/tags/python/</loc>
+    <lastmod>2012-06-09T19:36:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/blog/python-decorators/</loc>
     <lastmod>2012-06-09T19:36:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/steve-jobs-secrets-of-life-by-scvha/</loc>
+    <loc>https://rl.axitkhurana.com/blog/steve-jobs-secrets-of-life-by-scvha/</loc>
     <lastmod>2012-06-01T21:06:03+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/probably-the-biggest-lie-told-in-schools-is-that/</loc>
+    <loc>https://rl.axitkhurana.com/blog/probably-the-biggest-lie-told-in-schools-is-that/</loc>
     <lastmod>2012-04-01T14:03:40+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/seatgeek-application/</loc>
+    <loc>https://rl.axitkhurana.com/blog/seatgeek-application/</loc>
     <lastmod>2012-03-02T02:22:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/when-you-are-inspired-by-some-great-purpose-some/</loc>
+    <loc>https://rl.axitkhurana.com/blog/when-you-are-inspired-by-some-great-purpose-some/</loc>
     <lastmod>2012-02-12T14:16:37+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/braces-in-python/</loc>
+    <loc>https://rl.axitkhurana.com/tags/braces/</loc>
+    <lastmod>2012-01-11T20:25:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/blog/braces-in-python/</loc>
     <lastmod>2012-01-11T20:25:01+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/one-thing-that-we-have-learned-is-that-piracy-is/</loc>
+    <loc>https://rl.axitkhurana.com/tags/c/</loc>
+    <lastmod>2012-01-11T20:25:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/tags/whitespace/</loc>
+    <lastmod>2012-01-11T20:25:01+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/blog/one-thing-that-we-have-learned-is-that-piracy-is/</loc>
     <lastmod>2012-01-11T13:26:42+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/dont-move-by-phantogram/</loc>
+    <loc>https://rl.axitkhurana.com/blog/dont-move-by-phantogram/</loc>
     <lastmod>2011-10-15T14:38:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/remembering-steve-jobs-yesterday-the-world/</loc>
+    <loc>https://rl.axitkhurana.com/blog/remembering-steve-jobs-yesterday-the-world/</loc>
     <lastmod>2011-10-06T18:42:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/dutch-national-flag-problem/</loc>
+    <loc>https://rl.axitkhurana.com/tags/algorithms/</loc>
+    <lastmod>2011-10-05T18:14:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/tags/c&#43;&#43;/</loc>
+    <lastmod>2011-10-05T18:14:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/tags/dutch-national-flag/</loc>
+    <lastmod>2011-10-05T18:14:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/blog/dutch-national-flag-problem/</loc>
     <lastmod>2011-10-05T18:14:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/commenting-block-of-code-in-vim/</loc>
+    <loc>https://rl.axitkhurana.com/tags/partition/</loc>
+    <lastmod>2011-10-05T18:14:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rl.axitkhurana.com/blog/commenting-block-of-code-in-vim/</loc>
     <lastmod>2011-10-04T20:12:40+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/what-is-the-role-of-a-ceo/</loc>
+    <loc>https://rl.axitkhurana.com/blog/what-is-the-role-of-a-ceo/</loc>
     <lastmod>2011-10-02T18:32:09+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/why-not-to-do-a-music-startup/</loc>
+    <loc>https://rl.axitkhurana.com/blog/why-not-to-do-a-music-startup/</loc>
     <lastmod>2011-09-26T18:53:25+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/ten-highly-successful-bootstrapped-startups/</loc>
+    <loc>https://rl.axitkhurana.com/blog/ten-highly-successful-bootstrapped-startups/</loc>
     <lastmod>2011-09-02T15:57:57+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/identity-at-mozilla-introducing-browserid-a/</loc>
+    <loc>https://rl.axitkhurana.com/blog/identity-at-mozilla-introducing-browserid-a/</loc>
     <lastmod>2011-07-15T06:22:20+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/david-tumblr-2007/</loc>
+    <loc>https://rl.axitkhurana.com/blog/david-tumblr-2007/</loc>
     <lastmod>2011-06-23T12:15:43+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/eric-stromberg-5-reasons-to-join-a-startup-after/</loc>
+    <loc>https://rl.axitkhurana.com/blog/eric-stromberg-5-reasons-to-join-a-startup-after/</loc>
     <lastmod>2011-06-02T17:21:43+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/pl-patterns-moving-from-blogger-to-tumblr/</loc>
+    <loc>https://rl.axitkhurana.com/blog/pl-patterns-moving-from-blogger-to-tumblr/</loc>
     <lastmod>2011-05-25T16:48:17+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/description-of-popular-software-licenses/</loc>
+    <loc>https://rl.axitkhurana.com/blog/description-of-popular-software-licenses/</loc>
     <lastmod>2011-05-01T12:54:40+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/ric-elias-3-things-i-learned-while-my-plane/</loc>
+    <loc>https://rl.axitkhurana.com/blog/ric-elias-3-things-i-learned-while-my-plane/</loc>
     <lastmod>2011-04-25T11:19:30+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/radbox-blog-raising-the-bar/</loc>
+    <loc>https://rl.axitkhurana.com/blog/radbox-blog-raising-the-bar/</loc>
     <lastmod>2011-04-24T17:49:23+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/interactive-git-cheatsheet/</loc>
+    <loc>https://rl.axitkhurana.com/blog/interactive-git-cheatsheet/</loc>
     <lastmod>2011-04-24T17:48:13+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/python/</loc>
+    <loc>https://rl.axitkhurana.com/blog/python/</loc>
     <lastmod>2011-04-23T21:15:47+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/google-io-nice-website/</loc>
+    <loc>https://rl.axitkhurana.com/blog/google-io-nice-website/</loc>
     <lastmod>2011-04-08T00:37:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/pycon-2011-virtual-env-python/</loc>
+    <loc>https://rl.axitkhurana.com/blog/pycon-2011-virtual-env-python/</loc>
     <lastmod>2011-04-06T17:58:07+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/fools-ignore-complexity-pragmatists-suffer-it/</loc>
+    <loc>https://rl.axitkhurana.com/blog/fools-ignore-complexity-pragmatists-suffer-it/</loc>
     <lastmod>2010-12-27T13:52:59+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/my-desktop/</loc>
+    <loc>https://rl.axitkhurana.com/blog/my-desktop/</loc>
     <lastmod>2010-12-22T07:50:55+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/the-mediocre-teacher-tells-the-good-teacher/</loc>
+    <loc>https://rl.axitkhurana.com/blog/the-mediocre-teacher-tells-the-good-teacher/</loc>
     <lastmod>2010-10-19T17:21:07+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/blog/reason-to-not-not-do-a-startup-the-idea/</loc>
+    <loc>https://rl.axitkhurana.com/blog/reason-to-not-not-do-a-startup-the-idea/</loc>
     <lastmod>2010-08-08T09:57:48+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/tags/algorithms/</loc>
-    <lastmod>2011-10-05T18:14:00+00:00</lastmod>
+    <loc>https://rl.axitkhurana.com/authors/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/</loc>
-    <lastmod>2016-12-29T00:52:39+00:00</lastmod>
+    <loc>https://rl.axitkhurana.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://axitkhurana.com/tags/blogging/</loc>
-    <lastmod>2014-10-13T07:39:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/blog/</loc>
-    <lastmod>2016-12-29T00:52:39+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/braces/</loc>
-    <lastmod>2012-01-11T20:25:01+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/buster/</loc>
-    <lastmod>2014-10-13T07:39:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/c/</loc>
-    <lastmod>2012-01-11T20:25:01+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/c&#43;&#43;/</loc>
-    <lastmod>2011-10-05T18:14:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/convocation/</loc>
-    <lastmod>2014-10-13T07:24:26+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/decorators/</loc>
-    <lastmod>2012-06-09T19:36:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/dutch-national-flag/</loc>
-    <lastmod>2011-10-05T18:14:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/ghost/</loc>
-    <lastmod>2014-10-13T07:39:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/github/</loc>
-    <lastmod>2014-10-13T07:39:20+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/iit-roorkee/</loc>
-    <lastmod>2014-10-13T07:24:26+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/internet/</loc>
-    <lastmod>2014-10-13T06:32:24+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/partition/</loc>
-    <lastmod>2011-10-05T18:14:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/python/</loc>
-    <lastmod>2012-06-09T19:36:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/reddit/</loc>
-    <lastmod>2014-10-13T06:32:24+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/</loc>
-    <lastmod>2011-10-05T18:14:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/things-i-like/</loc>
-    <lastmod>2014-10-13T06:32:24+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://axitkhurana.com/tags/whitespace/</loc>
-    <lastmod>2012-01-11T20:25:01+00:00</lastmod>
+    <loc>https://rl.axitkhurana.com/series/</loc>
     <priority>0</priority>
   </url>
   
