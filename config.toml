@@ -1,5 +1,6 @@
 baseURL = "https://rl.axitkhurana.com"
 title = "Akshit Khurana"
+logo = "static/images/avatar.jpg"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
@@ -22,7 +23,7 @@ enableEmoji = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "New Blog"
+description = "New blog, new you"
 title404 = "Nothing's here!"
 
 [params.assets]
@@ -54,7 +55,7 @@ hideMainMenu = false
 enable = true
 
 [params.widgets]
-header = ["breadcrumbs"]
+# header = ["breadcrumbs"]
 homepage = ["recent_posts"]
 sidebar = ["about","search","sidebar_menu","taxonomy_cloud"]
 footer = ["social_menu"]
@@ -157,3 +158,5 @@ hrefTargetBlank = true
 lang = "en"
 languageName = "English"
 weight = 1
+
+publishDir = "docs"

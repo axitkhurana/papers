@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ghost on AxitKhurana</title>
-    <link>http://axitkhurana.com/tags/ghost/</link>
-    <description>Recent content in Ghost on AxitKhurana</description>
+    <title>Ghost on Akshit Khurana</title>
+    <link>https://rl.axitkhurana.com/tags/ghost/</link>
+    <description>Recent content in Ghost on Akshit Khurana</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Mon, 13 Oct 2014 07:39:20 +0000</lastBuildDate>
     
-	<atom:link href="http://axitkhurana.com/tags/ghost/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://rl.axitkhurana.com/tags/ghost/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introducing Buster</title>
-      <link>http://axitkhurana.com/blog/introducing-ghost/</link>
+      <link>https://rl.axitkhurana.com/blog/introducing-ghost/</link>
       <pubDate>Mon, 13 Oct 2014 07:39:20 +0000</pubDate>
       
-      <guid>http://axitkhurana.com/blog/introducing-ghost/</guid>
+      <guid>https://rl.axitkhurana.com/blog/introducing-ghost/</guid>
       <description>Buster is a Super simple, Totally awesome, Brute force static site generator for Ghost inspired by Octopress.
 Generate Static Pages. Preview. Deploy to Github Pages.
 The interface setup [--gh-repo=&amp;lt;repo-url&amp;gt;]
